@@ -1,0 +1,14 @@
+package main;
+
+class Vehicle {}
+    public class Car1 extends Vehicle{
+        
+        public static void main(String[] args) {
+            Vehicle bmw = new Car1();
+            boolean result = bmw instanceof Car1;
+            System.out.println(result); // this gives result true as bmw is an object of class Car
+            boolean result1 = bmw instanceof Vehicle;
+            System.out.println(result1);  //// this gives result true as bmw is an object of class car and it is a child class of vehicle class
+        }
+    }
+
